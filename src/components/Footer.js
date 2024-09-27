@@ -6,10 +6,7 @@ import { CiLocationOn } from "react-icons/ci";
 
 export default function Footer() {
   return (
-    <footer
-      className="w-full h-full py-6 flex flex-row"
-      style={{ backgroundImage: `url('/img/isep.png')` }}
-    >
+    <footer className="w-full h-full py-6 flex flex-row bg-zinc-950">
       <div className="w-1/2 flex flex-row items-center justify-center">
         <img
           className="mr-10"
@@ -28,13 +25,21 @@ export default function Footer() {
         <span className="font-bold pb-2">Contacto</span>
         <span className="flex flex-row pb-1">
           <CiLocationOn style={{ height: "1.3em", width: "1.3em" }} />
-          <a className="ml-2" href="https://maps.app.goo.gl/3SkdbS4aHt3UvVUN7" target="_blank">
+          <a
+            className="ml-2"
+            href="https://maps.app.goo.gl/3SkdbS4aHt3UvVUN7"
+            target="_blank"
+          >
             R. Dr. António Bernardino de Almeida 431, 4249-015 Porto
           </a>
         </span>
         <span className="flex flex-row">
           <CgMail style={{ height: "1.3em", width: "1.3em" }} />
-          <a className="ml-2" href="mailto:neeti.isep@gmail.com" target="_blank">
+          <a
+            className="ml-2"
+            href="mailto:neeti.isep@gmail.com"
+            target="_blank"
+          >
             neeti.isep@gmail.com
           </a>
         </span>
