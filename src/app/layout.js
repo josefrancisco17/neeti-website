@@ -1,4 +1,6 @@
 import "@/styles/globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "NEETI",
@@ -10,7 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Header />
         <div id="root">{children}</div>
+        <Footer />
       </body>
     </html>
   );
