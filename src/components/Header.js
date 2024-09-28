@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <nav className="w-full flex flex-row fixed font-bold backdrop-blur-sm bg-black/60 py-3">
+    <nav className="z-10 w-full flex flex-row fixed font-bold backdrop-blur-sm bg-cyan-600/10 text-white py-3 my-2 rounded-xl">
       <div className="w-full flex-row px-5 gap-3 py-3 justify-between">
         <span className="self-center text-lg md:text-xl">NEETI</span>
       </div>
