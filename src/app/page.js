@@ -25,7 +25,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="min-h-screen flex flex-row items-center justify-between px-20 py-10 bg-zinc-950 text-white">
+      <div className="min-h-screen flex flex-row items-center justify-between px-20 py-10 bg-zinc-950 text-white bg-gradient-to-b from-black to-zinc-950">
         <div className="w-96 flex flex-col justify-center">
           <h1>DESCRICAO</h1>
           <p>
@@ -53,30 +53,57 @@ export default function Home() {
           <CarouselNext />
         </Carousel>
       </div>
-      <div id="about" className="min-h-screen flex flex-col justify-center items-center px-20 py-10 bg-black text-white">
-        <h1 className="font-extrabold text-3xl">About Us</h1>
-        <p className="font-bold text-xl">
-          Fundado a 5 de Abril de 2022, no Instituto Superior de Engenharia do
-          Porto (ISEP), o Núcleo de Estudantes de Engenharia de Telecomunicações
-          e Informática (NEETI) é um órgão que representa o interesse dos
-          estudantes do curso.
-        </p>
+      <div id="about" className="min-h-screen flex flex-col justify-center items-center px-20 py-10 bg-black text-white bg-gradient-to-b from-zinc-950 to-zinc-900">
+        <h1 className="font-extrabold text-5xl mb-6">About Us</h1>
+        <ul className="font-bold text-xl w-5/6 text-center pt-5 space-y-4 list-none">
+          <li className="flex items-center justify-center space-x-2">
+            <span className="text-3xl">🗓️</span>
+            <span>Fundado em 5 de Abril de 2022</span>
+          </li>
+          <li className="flex items-center justify-center space-x-2">
+            <span className="text-3xl">🏛️</span>
+            <span>ISEP - Instituto Superior de Engenharia do Porto</span>
+          </li>
+          <li className="flex items-center justify-center space-x-2">
+            <span className="text-3xl">🎓</span>
+            <span>Representamos os estudantes de Telecomunicações e Informática</span>
+          </li>
+        </ul>
       </div>
-      <div className="min-h-screen flex flex-col justify-center items-center px-20 py-10 bg-zinc-950 text-white">
-        <h1 className="font-extrabold text-3xl">Objetivos</h1>
-        <p className="font-bold text-xl">
-          Fomentar o desenvolvimento pessoal e académico de cada estudante
-        </p>
-        <p className="font-bold text-xl">
-          Organizar eventos de carácter pedagógico
-        </p>
-        <p className="font-bold text-xl">
-          Fomentar a comunicação entre alunos e docentes.
-        </p>
-        <p className="font-bold text-xl">
-          Promover o contato direto com o mercado de trabalho
-        </p>
+      <div className="min-h-screen flex flex-col justify-center items-center px-20 py-10 bg-gradient-to-b from-zinc-900 to-zinc-900 text-white space-y-10">
+        <h1 className="font-extrabold text-5xl tracking-tight text-center mb-8">Objetivos</h1>
+        
+        <div className="space-y-6 max-w-4xl">
+          <div className="flex flex-col items-center md:flex-row md:space-x-6">
+            <span className="text-4xl md:text-5xl text-indigo-500">🎯</span>
+            <p className="font-bold text-xl text-center md:text-left md:text-2xl">
+              Incentivar o crescimento pessoal e académico de todos os estudantes
+            </p>
+          </div>
+    
+          <div className="flex flex-col items-center md:flex-row md:space-x-6">
+            <span className="text-4xl md:text-5xl text-green-500">📚</span>
+            <p className="font-bold text-xl text-center md:text-left md:text-2xl">
+              Organizar eventos de carácter pedagógico
+            </p>
+          </div>
+    
+          <div className="flex flex-col items-center md:flex-row md:space-x-6">
+            <span className="text-4xl md:text-5xl text-yellow-500">💬</span>
+            <p className="font-bold text-xl text-center md:text-left md:text-2xl">
+              Fomentar a comunicação entre alunos e docentes
+            </p>
+          </div>
+      
+          <div className="flex flex-col items-center md:flex-row md:space-x-6">
+            <span className="text-4xl md:text-5xl text-red-500">🌐</span>
+            <p className="font-bold text-xl text-center md:text-left md:text-2xl">
+              Promover o contato direto com o mercado de trabalho
+            </p>
+          </div>
+        </div>
       </div>
+
     </div>
   );
 }

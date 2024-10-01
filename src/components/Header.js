@@ -7,22 +7,22 @@ export default function Header() {
       <div className="w-full">
         <ul className="w-full h-full flex flex-row justify-end">
           <li className="px-5 py-2 self-center">
-            <a href="/">Home</a>
+            <a className="hover:text-blue-600 active:text-blue-800" href="/">Home</a>
           </li>
           <li className="px-5 py-2 self-center">
-            <a href="#about">About</a>
+            <a className="hover:text-blue-600 active:text-blue-800" href="#about">About</a>
           </li>
           <li className="px-5 py-2 self-center">
-            <a href="#footer">Contact</a>
+            <a className="hover:text-blue-600 active:text-blue-800" href="#footer">Contact</a>
           </li>
           <li className="px-5 py-2 self-center">
-            <a href="https://mega.nz/folder/BqkHCIxL#O6-U27dWqCn23Hg9E7BX-w" target="_blank">Repo</a>
+            <a className="hover:text-blue-600 active:text-blue-800" href="https://mega.nz/folder/BqkHCIxL#O6-U27dWqCn23Hg9E7BX-w" target="_blank">Repo</a>
           </li>
           <li className="px-5 py-2 self-center">
-            <a href="/team">Team</a>
+            <a className="hover:text-blue-600 active:text-blue-800" href="/team">Team</a>
           </li>
           <li className="px-5 py-2 self-center">
-            <a href="/">Events</a>
+            <a className="hover:text-blue-600 active:text-blue-800" href="/">Events</a>
           </li>
         </ul>
       </div>
