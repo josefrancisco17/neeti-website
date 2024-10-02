@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="w-1/2 flex flex-row items-center justify-center">
         <img
           className="mr-10"
-          src="/img/logo.png"
+          src="/img/logo-branco.png"
           alt="logo"
           style={{ width: 100, height: 100 }}
         />

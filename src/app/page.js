@@ -26,17 +26,11 @@ export default function Home() {
         </div>
       </div>
       <div className="min-h-screen flex flex-row items-center justify-between px-20 py-10 bg-zinc-950 text-white bg-gradient-to-b from-black to-zinc-950">
-        <div className="w-96 flex flex-col justify-center">
-          <h1>DESCRICAO</h1>
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Laoreet leo
-            felis ad donec inceptos magnis. Ex est non facilisis vestibulum vel
-            dignissim. Finibus orci orci fusce arcu erat magnis habitasse. Urna
-            magna ex hendrerit ullamcorper, efficitur maecenas bibendum. Libero
-            malesuada auctor aenean massa ultrices interdum id ridiculus.
-            Maximus nostra maximus erat ornare ligula fermentum aliquam feugiat
-            lacus. Arcu quis class quisque luctus fusce. Lobortis finibus
-            malesuada adipiscing sodales sagittis.
+        <div className="w-1/2 flex flex-col justify-center">
+          <h1 className="text-center font-extrabold text-5xl mb-6">Eventos</h1>
+          <p className="text-2xl  text-center">
+            Ao longo do ano, realizamos diversos eventos, como jantares de curso, 
+            merch do curso, atividades e muito mais!
           </p>
         </div>
         <Carousel>
