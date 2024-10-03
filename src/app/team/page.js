@@ -6,7 +6,7 @@ import { BackgroundBeams } from "../../components/ui/background-beams";
 import { DirectionAwareHover } from "../../components/ui/direction-aware-hover";
 
 export default function Team() {
-  const [isUnderConstruction] = useState(true);
+  const [isUnderConstruction] = useState(false);
   
     if (isUnderConstruction) {
       return (

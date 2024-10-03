@@ -6,11 +6,15 @@ export const metadata = {
   title: "NEETI",
   description:
     "Núcleo de Estudantes de Engenharia de Telecomunicações e Informática",
+  
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+    <head>
+      <link rel="icon" href="/img/logo-branco.png" />
+    </head>
       <body>
         <Header />
         <div id="root">{children}</div>
