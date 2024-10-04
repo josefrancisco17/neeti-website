@@ -1,9 +1,8 @@
 "use client";
 
-import { TextGenerateEffect } from "../components/ui/text-generate-effect";
-import { BackgroundBeams } from "../components/ui/background-beams";
-import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
-import { Button } from "@/components/ui/button";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
 import {
   Carousel,
@@ -26,7 +25,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="min-h-screen flex flex-row items-center justify-between px-20 py-10 bg-zinc-950 text-white bg-gradient-to-b from-black to-zinc-950">
+      <div
+          className="min-h-scre  en flex flex-row items-center justify-between px-20 py-10 bg-zinc-950 text-white bg-gradient-to-b from-black to-zinc-950">
         <div className="w-1/2 flex flex-col justify-center items-center space-y-6 px-8">
           <h1 className="text-center font-extrabold text-5xl text-white mb-4">
             Eventos
@@ -38,32 +38,29 @@ export default function Home() {
             com os membros do teu curso e aproveitarem do melhor que a vida
             académica no Porto tem para oferecer.
           </p>
-          <div className="flex flex-row justify-center gap-4 pt-4">
-            <Button className="bg-blue-600 hover:bg-blue-700 rounded-lg h-[50px] w-[150px] font-extrabold text-md shadow-lg hover:shadow-xl transform hover:translate-y-[-2px] transition-all duration-300">
-              <a href="https://forms.gle/UwptFU8xCbFewTKQ7" target="_blank">
-                Jantar
-              </a>
-            </Button>
-            <Button className="bg-blue-600 hover:bg-blue-700 rounded-lg h-[50px] w-[150px] font-extrabold text-md shadow-lg hover:shadow-xl transform hover:translate-y-[-2px] transition-all duration-300">
-              <a href="https://forms.gle/y5r3rKJ39Lf6Uu1r7" target="_blank">
-                Recrutamento
-              </a>
-            </Button>
-          </div>
+
         </div>
 
         <div className="w-1/2 relative flex items-center justify-center p-8">
-          <img
-            src="/img/template.jpeg"
-            alt="Image"
-            className="w-[500px] h-[500px]  rounded-xl object-cover shadow-lg"
-            style={{ borderRadius: "20px" }}
-          />
+          <Carousel className="w-full">
+            <CarouselContent>
+              {Array.from({length: 5}).map((_, index) => (
+                  <CarouselItem key={index} className="flex items-center justify-center"> {/* Center content */}
+                    <DirectionAwareHover
+                        imageUrl={`/img/template0${index + 1}.jpg`}
+                    />
+                  </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious/>
+            <CarouselNext/>
+          </Carousel>
         </div>
+
       </div>
       <div
-        id="about"
-        className="min-h-screen flex flex-col justify-center items-center px-20 py-10 bg-black text-white bg-gradient-to-b from-zinc-950 to-zinc-900"
+          id="about"
+          className="min-h-screen flex flex-col justify-center items-center px-20 py-10 bg-black text-white bg-gradient-to-b from-zinc-950 to-zinc-900"
       >
         <h1 className="font-extrabold text-5xl mb-6">About Us</h1>
         <ul className="font-bold text-xl w-5/6 text-center pt-5 space-y-4 list-none">
