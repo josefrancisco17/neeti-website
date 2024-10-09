@@ -10,19 +10,17 @@ export default function Header() {
             <a className="hover:text-blue-600 active:text-blue-800" href="/">Home</a>
           </li>
           <li className="px-5 py-2 self-center">
-            <a className="hover:text-blue-600 active:text-blue-800" href="#about">About</a>
+            <a className="hover:text-blue-600 active:text-blue-800" href="/team">Team</a>
           </li>
           <li className="px-5 py-2 self-center">
             <a className="hover:text-blue-600 active:text-blue-800" href="#footer">Contact</a>
           </li>
           <li className="px-5 py-2 self-center">
-            <a className="hover:text-blue-600 active:text-blue-800" href="https://forms.gle/UwptFU8xCbFewTKQ7"  target="_blank">Jantar</a>
+            <a className="hover:text-blue-600 active:text-blue-800"
+               href="https://mega.nz/folder/BqkHCIxL#O6-U27dWqCn23Hg9E7BX-w" target="_blank">Repo</a>
           </li>
           <li className="px-5 py-2 self-center">
-            <a className="hover:text-blue-600 active:text-blue-800" href="https://forms.gle/y5r3rKJ39Lf6Uu1r7"  target="_blank">Recrutamento</a>
-          </li>
-          <li className="px-5 py-2 self-center">
-            <a className="hover:text-blue-600 active:text-blue-800" href="https://mega.nz/folder/BqkHCIxL#O6-U27dWqCn23Hg9E7BX-w" target="_blank">Repo</a>
+            <a className="hover:text-blue-600 active:text-blue-800" href="#about">About</a>
           </li>
         </ul>
       </div>
