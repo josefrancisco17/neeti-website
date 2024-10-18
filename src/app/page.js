@@ -45,7 +45,7 @@ export default function Home() {
           <Carousel className="w-full">
             <CarouselContent>
               {Array.from({length: 5}).map((_, index) => (
-                  <CarouselItem key={index} className="flex items-center justify-center"> {/* Center content */}
+                  <CarouselItem key={index} className="flex items-center justify-center">
                     <DirectionAwareHover
                         imageUrl={`/img/template0${index + 1}.jpg`}
                     />
