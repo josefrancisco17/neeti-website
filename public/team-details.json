@@ -1,0 +1,47 @@
+{
+  "years": {
+    "2024/25": {
+      "presidencia": [
+        {
+          "name": "João Silva",
+          "role": "President",
+          "social": {
+            "linkedin": "https://linkedin.com/in/joaosilva",
+            "twitter": "https://twitter.com/joaosilva",
+            "github": "https://github.com/joaosilva"
+          }
+        },
+        {
+          "name": "Maria Santos",
+          "role": "Vice President",
+          "social": {
+            "linkedin": "https://linkedin.com/in/mariasantos",
+            "instagram": "https://instagram.com/mariasantos"
+          }
+        }
+      ],
+      "diretoria": [
+        {
+          "name": "Carlos Oliveira",
+          "role": "Technical Director",
+          "social": {
+            "linkedin": "https://linkedin.com/in/carlosoliveira",
+            "github": "https://github.com/carlosoliveira"
+          }
+        }
+      ]
+    },
+    "2023/24": {
+      "presidencia": [
+        {
+          "name": "Ana Pereira",
+          "role": "President",
+          "social": {
+            "linkedin": "https://linkedin.com/in/anapereira",
+            "twitter": "https://twitter.com/anapereira"
+          }
+        }
+      ]
+    }
+  }
+}
