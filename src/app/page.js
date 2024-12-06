@@ -41,7 +41,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Right Section */}
           <div className="w-full md:w-1/2 relative flex items-center justify-center p-4 sm:p-8">
             <Carousel className="w-full">
               <CarouselContent>

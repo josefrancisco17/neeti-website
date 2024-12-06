@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import MemberCard from "@/components/MemberCard";
 
 export default function Team() {
-    const [teamData, setTeamData] = useState(null);
+        const [teamData, setTeamData] = useState(null);
     const [selectedYear, setSelectedYear] = useState('2024/25');
 
     useEffect(() => {
@@ -21,7 +21,7 @@ export default function Team() {
         fetchTeamData();
     }, []);
 
-    if (!teamData) return <div>Loading...</div>;
+    if (!teamData) return <div className="z-0 min-h-screen p-8 flex flex-col items-center justify-center bg-black relative text-white">Loading...</div>;
 
     const years = Object.keys(teamData.years).reverse();
     const currentYearData = teamData.years[selectedYear];
