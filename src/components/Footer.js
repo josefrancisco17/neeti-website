@@ -6,56 +6,56 @@ import { CiLocationOn } from "react-icons/ci";
 
 export default function Footer() {
   return (
-    <footer id="footer" className="w-full h-full py-6 flex flex-row backdrop-blur-sm bg-black/95 bg-gradient-to-b from-black to-zinc-950 text-white">
-      <div className="w-1/2 flex flex-row items-center justify-center">
-        <img
-          className="mr-10"
-          src="/img/logo-branco.png"
-          alt="logo"
-          style={{ width: 100, height: 100 }}
-        />
-        <div className="flex flex-col">
-          <span className="text-center">
+      <footer id="footer" className="w-full py-6 flex flex-wrap md:flex-nowrap backdrop-blur-sm bg-black/95 bg-gradient-to-b from-black to-zinc-950 text-white">
+        <div className="w-full md:w-1/2 flex flex-col md:flex-row items-center justify-center md:justify-start px-4 md:px-8">
+          <img
+              className="mb-4 md:mb-0 md:mr-6"
+              src="/img/logo-branco.png"
+              alt="logo"
+              style={{ width: 100, height: 100 }}
+          />
+          <div className="text-center md:text-left">
+          <span className="block">
             Núcleo de Estudantes de Telecomunicações e Informática
           </span>
-          <span>© 2024 NEETI. All rights reserved.</span>
+            <span>© 2024 NEETI. All rights reserved.</span>
+          </div>
         </div>
-      </div>
-      <div className="w-1/2 flex flex-col pl-20">
-        <span className="font-bold pb-2">Contacto</span>
-        <span className="flex flex-row pb-1">
-          <CiLocationOn style={{ height: "1.3em", width: "1.3em" }} />
-          <a
-            className="ml-2"
-            href="https://maps.app.goo.gl/3SkdbS4aHt3UvVUN7"
-            target="_blank"
+
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start px-4 md:px-8 mt-6 md:mt-0">
+          <span className="font-bold pb-2">Contacto</span>
+          <span className="flex flex-row items-center pb-2">
+          <CiLocationOn className="h-5 w-5" />
+          <a className="ml-2 break-words text-center md:text-left"
+             href="https://maps.app.goo.gl/3SkdbS4aHt3UvVUN7"
+             target="_blank"
           >
             R. Dr. António Bernardino de Almeida 431, 4249-015 Porto
           </a>
         </span>
-        <span className="flex flex-row">
-          <CgMail style={{ height: "1.3em", width: "1.3em" }} />
-          <a
-            className="ml-2"
-            href="mailto:neeti.isep@gmail.com"
-            target="_blank"
+          <span className="flex flex-row items-center">
+          <CgMail className="h-5 w-5" />
+          <a className="ml-2 break-words"
+             href="mailto:neeti.isep@gmail.com"
+             target="_blank"
           >
             neeti.isep@gmail.com
           </a>
         </span>
-        <span className="font-bold py-2">Social</span>
-        <div className="flex flex-row gap-4">
-          <a href="https://www.instagram.com/neeti_isep/" target="_blank">
-            <FaInstagram style={{ height: "1.5em", width: "1.5em" }} />
-          </a>
-          <a href="https://www.linkedin.com/company/neetiisep/" target="_blank">
-            <FaLinkedin style={{ height: "1.5em", width: "1.5em" }} />
-          </a>
-          <a href="https://linktr.ee/neeti_isep" target="_blank">
-            <TbBrandLinktree style={{ height: "1.5em", width: "1.5em" }} />
-          </a>
+
+          <span className="font-bold py-2">Social</span>
+          <div className="flex flex-row gap-4 justify-center md:justify-start">
+            <a href="https://www.instagram.com/neeti_isep/" target="_blank">
+              <FaInstagram className="h-6 w-6" />
+            </a>
+            <a href="https://www.linkedin.com/company/neetiisep/" target="_blank">
+              <FaLinkedin className="h-6 w-6" />
+            </a>
+            <a href="https://linktr.ee/neeti_isep" target="_blank">
+              <TbBrandLinktree className="h-6 w-6" />
+            </a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   );
 }

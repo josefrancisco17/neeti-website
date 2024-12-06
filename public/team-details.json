@@ -86,7 +86,9 @@
           "role": "Diretor",
           "img": "/img/profile/JoaoFonseca.jpeg",
           "social": {
-            "linkedin": "https://www.linkedin.com/in/joaofonseca04/"
+            "linkedin": "https://www.linkedin.com/in/joaofonseca04",
+            "github": "https://github.com/Fonsecaaa",
+            "mail": "joao.fonseca@gmail.com"
           }
         },
         {
@@ -117,6 +119,7 @@
           "role": "Diretor",
           "img": "/img/profile/profile.png",
           "social": {
+           "linkedin": "https://www.linkedin.com/in/guilherme-neto-1ba83832a/"
           }
         },
         {
