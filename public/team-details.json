@@ -1,44 +1,159 @@
 {
   "years": {
     "2024/25": {
-      "presidencia": [
+      "Presidencia": [
         {
-          "name": "João Silva",
-          "role": "President",
+          "name": "Vítor Barbosa",
+          "role": "Presidente",
+          "img": "/img/profile/VitorBarbosa.jpeg",
           "social": {
-            "linkedin": "https://linkedin.com/in/joaosilva",
-            "twitter": "https://twitter.com/joaosilva",
-            "github": "https://github.com/joaosilva"
+            "linkedin": "https://www.linkedin.com/in/vitorfariabarbosa/"
           }
         },
         {
-          "name": "Maria Santos",
-          "role": "Vice President",
+          "name": "Guilherme Gouveia",
+          "role": "Vice-Presidente",
+          "img": "/img/profile/GuilhermeGouveia.jpeg",
           "social": {
-            "linkedin": "https://linkedin.com/in/mariasantos",
-            "instagram": "https://instagram.com/mariasantos"
+            "linkedin": "https://www.linkedin.com/in/guilhermegouveia2004/"
+          }
+        },
+        {
+          "name": "Ângelo Silva",
+          "role": "Secretário-Geral",
+          "img": "/img/profile/AngeloSilva.jpeg",
+          "social": {
+          }
+        },
+        {
+          "name": "Catarina Gomes",
+          "role": "Tesoureira",
+          "img": "/img/profile/CatarinaGomes.jpeg",
+          "social": {
           }
         }
       ],
-      "diretoria": [
+      "DepartamentoInformatica": [
         {
-          "name": "Carlos Oliveira",
-          "role": "Technical Director",
+          "name": "José Francisco",
+          "role": "Diretor",
+          "img": "/img/profile/JoseFrancisco.png",
           "social": {
-            "linkedin": "https://linkedin.com/in/carlosoliveira",
-            "github": "https://github.com/carlosoliveira"
+            "linkedin": "https://www.linkedin.com/in/josefrancisco17/",
+            "github": "https://github.com/josefrancisco17"
+          }
+        },
+        {
+          "name": "Eduardo Silva",
+          "role": "Subdiretor",
+          "img": "/img/profile/EduardoSilva.jpeg",
+          "social": {
+            "linkedin": "https://www.linkedin.com/in/eduardosilva17/"
+          }
+        },
+        {
+          "name": "André Fonseca",
+          "role": "Vogal",
+          "img": "/img/profile/AndreFonseca.jpeg",
+          "social": {
+          }
+        },
+        {
+          "name": "José Perfeito",
+          "role": "Vogal",
+          "img": "/img/profile/JosePerfeito.jpeg",
+          "social": {
+          }
+        },
+        {
+          "name": "Vasco Barbosa",
+          "role": "Vogal",
+          "img": "/img/profile/VascoBarbosa.jpeg",
+          "social": {
+          }
+        },
+        {
+          "name": "Vasco Magolo",
+          "role": "Vogal",
+          "img": "/img/profile/profile.png",
+          "social": {
+          }
+        }
+      ],
+      "DepartamentoGestao": [
+        {
+          "name": "João Fonseca",
+          "role": "Diretor",
+          "img": "/img/profile/JoaoFonseca.jpeg",
+          "social": {
+            "linkedin": "https://www.linkedin.com/in/joaofonseca04/"
+          }
+        },
+        {
+          "name": "Gonçalo Breda",
+          "role": "Subdiretor",
+          "img": "/img/profile/GoncaloBreda.jpeg",
+          "social": {
+          }
+        },
+        {
+          "name": "Gonçalo Maia",
+          "role": "Vogal",
+          "img": "/img/profile/profile.png",
+          "social": {
+          }
+        },
+        {
+          "name": "Marta Manuel",
+          "role": "Vogal",
+          "img": "/img/profile/profile.png",
+          "social": {
+          }
+        }
+      ],
+      "DepartamentoMarketing": [
+        {
+          "name": "Guilherme Neto",
+          "role": "Diretor",
+          "img": "/img/profile/profile.png",
+          "social": {
+          }
+        },
+        {
+          "name": "Henrique Gonçalves",
+          "role": "Subdiretor",
+          "img": "/img/profile/HenriqueGoncalves.jpeg",
+          "social": {
+          }
+        },
+        {
+          "name": "André Alvarenga",
+          "role": "Vogal",
+          "img": "/img/profile/AndreAlvarenga.jpeg",
+          "social": {
+            "linkedin": "https://www.linkedin.com/in/andr%C3%A9-alvarenga-174226269/"
+          }
+        },
+        {
+          "name": "Wessa Marlene",
+          "role": "Vogal",
+          "img": "/img/profile/WessaMarlene.jpeg",
+          "social": {
           }
         }
       ]
     },
     "2023/24": {
-      "presidencia": [
+      "Presidencia": [
         {
-          "name": "Ana Pereira",
+          "name": "Test",
           "role": "President",
+          "img": "/img/profile/profile.png",
           "social": {
-            "linkedin": "https://linkedin.com/in/anapereira",
-            "twitter": "https://twitter.com/anapereira"
+            "linkedin": "https://linkedin.com/in/test",
+            "mail": "test@mail.com",
+            "instagram": "https://instagram.com/test",
+            "github": "https://github.com/test"
           }
         }
       ]

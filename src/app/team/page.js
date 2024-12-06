@@ -4,19 +4,6 @@ import {useEffect, useState} from "react";
 import MemberCard from "@/components/MemberCard";
 
 export default function Team() {
-    const [isUnderConstruction] = useState(false);
-
-    if (isUnderConstruction) {
-        return (
-            <div className="min-h-screen p-8 flex flex-col items-center justify-center bg-black relative text-white">
-                <div className="absolute inset-0 z-0"/>
-                <div className="z-10 mt-20 text-center">
-                    <h1 className="text-6xl font-bold mb-4">Page Under Construction</h1>
-                </div>
-            </div>
-        );
-    }
-
     const [teamData, setTeamData] = useState(null);
     const [selectedYear, setSelectedYear] = useState('2024/25');
 
@@ -36,7 +23,7 @@ export default function Team() {
 
     if (!teamData) return <div>Loading...</div>;
 
-    const years = Object.keys(teamData.years);
+    const years = Object.keys(teamData.years).reverse();
     const currentYearData = teamData.years[selectedYear];
     return (
         <div className="z-0 min-h-screen p-8 flex flex-col items-center justify-center bg-black relative text-white">
@@ -59,32 +46,68 @@ export default function Team() {
                     ))}
                 </div>
 
-                {currentYearData.presidencia && (
+                {currentYearData.Presidencia && (
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-center mb-8">Presidência</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {currentYearData.presidencia.map((member, index) => (
+                            {currentYearData.Presidencia.map((member, index) => (
                                 <MemberCard
                                     key={index}
                                     name={member.name}
                                     role={member.role}
                                     social={member.social}
+                                    img={member.img}
                                 />
                             ))}
                         </div>
                     </section>
                 )}
 
-                {currentYearData.diretoria && (
+                {currentYearData.DepartamentoInformatica && (
                     <section className="mb-12">
-                        <h2 className="text-2xl font-bold text-center mb-8">Diretoria</h2>
+                        <h2 className="text-2xl font-bold text-center mb-8">Departamento de Informática</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {currentYearData.diretoria.map((member, index) => (
+                            {currentYearData.DepartamentoInformatica.map((member, index) => (
                                 <MemberCard
                                     key={index}
                                     name={member.name}
                                     role={member.role}
                                     social={member.social}
+                                    img={member.img}
+                                />
+                            ))}
+                        </div>
+                    </section>
+                )}
+
+                {currentYearData.DepartamentoGestao && (
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-bold text-center mb-8">Departamento de Gestão</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {currentYearData.DepartamentoGestao.map((member, index) => (
+                                <MemberCard
+                                    key={index}
+                                    name={member.name}
+                                    role={member.role}
+                                    social={member.social}
+                                    img={member.img}
+                                />
+                            ))}
+                        </div>
+                    </section>
+                )}
+
+                {currentYearData.DepartamentoMarketing && (
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-bold text-center mb-8">Departamento de Marketing</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {currentYearData.DepartamentoMarketing.map((member, index) => (
+                                <MemberCard
+                                    key={index}
+                                    name={member.name}
+                                    role={member.role}
+                                    social={member.social}
+                                    img={member.img}
                                 />
                             ))}
                         </div>

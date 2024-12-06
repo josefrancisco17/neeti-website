@@ -20,7 +20,7 @@ export default function MemberCard(props) {
       <img
         className="min-h-60 min-w-60 object-cover rounded-xl shadow-xl"
         alt="profile picture"
-        src="/img/profile.png"
+        src={props.img}
       />
       <div className="mt-4 flex flex-row justify-between items-center">
         <div className="flex flex-col">
