@@ -5,7 +5,7 @@
         {
           "name": "Vítor Barbosa",
           "role": "Presidente",
-          "img": "/img/profile/VitorBarbosa.jpeg",
+          "img": "/img/profile/VitorBarbosa.png",
           "social": {
             "linkedin": "https://www.linkedin.com/in/vitorfariabarbosa/"
           }
@@ -13,7 +13,7 @@
         {
           "name": "Guilherme Gouveia",
           "role": "Vice-Presidente",
-          "img": "/img/profile/GuilhermeGouveia.jpeg",
+          "img": "/img/profile/GuilhermeGouveia.png",
           "social": {
             "linkedin": "https://www.linkedin.com/in/guilhermegouveia2004/"
           }
@@ -21,14 +21,14 @@
         {
           "name": "Ângelo Silva",
           "role": "Secretário-Geral",
-          "img": "/img/profile/AngeloSilva.jpeg",
+          "img": "/img/profile/AngeloSilva.png",
           "social": {
           }
         },
         {
           "name": "Catarina Gomes",
           "role": "Tesoureira",
-          "img": "/img/profile/CatarinaGomes.jpeg",
+          "img": "/img/profile/CatarinaGomes.png",
           "social": {
           }
         }
@@ -46,7 +46,7 @@
         {
           "name": "Eduardo Silva",
           "role": "Subdiretor",
-          "img": "/img/profile/EduardoSilva.jpeg",
+          "img": "/img/profile/EduardoSilva.png",
           "social": {
             "linkedin": "https://www.linkedin.com/in/eduardosilva17/"
           }
@@ -54,21 +54,21 @@
         {
           "name": "André Fonseca",
           "role": "Vogal",
-          "img": "/img/profile/AndreFonseca.jpeg",
+          "img": "/img/profile/AndreFonseca.png",
           "social": {
           }
         },
         {
           "name": "José Perfeito",
           "role": "Vogal",
-          "img": "/img/profile/JosePerfeito.jpeg",
+          "img": "/img/profile/JosePerfeito.png",
           "social": {
           }
         },
         {
           "name": "Vasco Barbosa",
           "role": "Vogal",
-          "img": "/img/profile/VascoBarbosa.jpeg",
+          "img": "/img/profile/VascoBarbosa.png",
           "social": {
           }
         },
@@ -84,16 +84,20 @@
         {
           "name": "João Fonseca",
           "role": "Diretor",
-          "img": "/img/profile/JoaoFonseca.jpeg",
+          "img": "/img/profile/JoaoFonseca.png",
           "social": {
-            "linkedin": "https://www.linkedin.com/in/joaofonseca04/"
+            "linkedin": "https://www.linkedin.com/in/joaofonseca04",
+            "github": "https://github.com/Fonsecaaa",
+            "mail": "joao.fonseca@gmail.com"
           }
         },
         {
           "name": "Gonçalo Breda",
           "role": "Subdiretor",
-          "img": "/img/profile/GoncaloBreda.jpeg",
+          "img": "/img/profile/GoncaloBreda.png",
           "social": {
+            "linkedin": "https://www.linkedin.com/in/gonçalo-breda-876209250/",
+            "instagram": "https://www.instagram.com/goncalobredaa/"
           }
         },
         {
@@ -117,19 +121,20 @@
           "role": "Diretor",
           "img": "/img/profile/profile.png",
           "social": {
+           "linkedin": "https://www.linkedin.com/in/guilherme-neto-1ba83832a/"
           }
         },
         {
           "name": "Henrique Gonçalves",
           "role": "Subdiretor",
-          "img": "/img/profile/HenriqueGoncalves.jpeg",
+          "img": "/img/profile/HenriqueGoncalves.png",
           "social": {
           }
         },
         {
           "name": "André Alvarenga",
           "role": "Vogal",
-          "img": "/img/profile/AndreAlvarenga.jpeg",
+          "img": "/img/profile/AndreAlvarenga.png",
           "social": {
             "linkedin": "https://www.linkedin.com/in/andr%C3%A9-alvarenga-174226269/"
           }
@@ -137,7 +142,7 @@
         {
           "name": "Wessa Marlene",
           "role": "Vogal",
-          "img": "/img/profile/WessaMarlene.jpeg",
+          "img": "/img/profile/WessaMarlene.png",
           "social": {
           }
         }
