@@ -71,13 +71,6 @@
           "img": "/img/profile/VascoBarbosa.png",
           "social": {
           }
-        },
-        {
-          "name": "Vasco Magolo",
-          "role": "Vogal",
-          "img": "/img/profile/profile.png",
-          "social": {
-          }
         }
       ],
       "DepartamentoGestao": [
@@ -97,7 +90,7 @@
           "img": "/img/profile/GoncaloBreda.png",
           "social": {
             "linkedin": "https://www.linkedin.com/in/gonçalo-breda-876209250/",
-            "instagram": "https://www.instagram.com/goncalobredaa/"
+            "github": "https://github.com/goncalobreda"
           }
         },
         {
@@ -110,7 +103,7 @@
         {
           "name": "Marta Manuel",
           "role": "Vogal",
-          "img": "/img/profile/profile.png",
+          "img": "/img/profile/MartaManuel.png",
           "social": {
           }
         }
@@ -119,7 +112,7 @@
         {
           "name": "Guilherme Neto",
           "role": "Diretor",
-          "img": "/img/profile/profile.png",
+          "img": "/img/profile/GuilhermeNeto.png",
           "social": {
            "linkedin": "https://www.linkedin.com/in/guilherme-neto-1ba83832a/"
           }

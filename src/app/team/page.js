@@ -1,10 +1,10 @@
 "use client";
 
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import MemberCard from "@/components/MemberCard";
 
 export default function Team() {
-        const [teamData, setTeamData] = useState(null);
+    const [teamData, setTeamData] = useState(null);
     const [selectedYear, setSelectedYear] = useState('2024/25');
 
     useEffect(() => {
@@ -21,24 +21,53 @@ export default function Team() {
         fetchTeamData();
     }, []);
 
-    if (!teamData) return <div className="z-0 min-h-screen p-8 flex flex-col items-center justify-center bg-black relative text-white">Loading...</div>;
+    if (!teamData) {
+        return (
+            <div className="z-0 min-h-screen p-8 flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+                <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-700 h-12 w-12 mb-4"></div>
+                <h2 className="text-xl">Loading...</h2>
+            </div>
+        );
+    }
 
     const years = Object.keys(teamData.years).reverse();
     const currentYearData = teamData.years[selectedYear];
+
+    const renderSection = (title, members) => (
+        members && (
+            <section className="mb-12 w-full max-w-6xl">
+                <h2 className="text-3xl font-bold text-center mb-8 text-gray-200">{title}</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {members.map((member, index) => (
+                        <MemberCard
+                            key={index}
+                            name={member.name}
+                            role={member.role}
+                            social={member.social}
+                            img={member.img}
+                        />
+                    ))}
+                </div>
+            </section>
+        )
+    );
+
     return (
-        <div className="z-0 min-h-screen p-8 flex flex-col items-center justify-center bg-black relative text-white">
-            <div className="absolute inset-0 z-0"/>
-            <div className="z-10 my-20 text-white flex flex-col items-center">
-                <h1 className="text-6xl font-bold mb-4">Equipa</h1>
-                <div className="flex justify-center gap-4 mb-12">
+        <div className="z-0 min-h-screen p-8 flex flex-col items-center bg-gradient-to-br from-gray-900 to-gray-800 relative text-white">
+            <div className="z-10 w-full max-w-7xl my-20 flex flex-col items-center">
+                <h1 className="text-6xl font-extrabold mb-6 text-center text-gray-100">
+                    Equipa
+                </h1>
+                <div className="flex flex-wrap justify-center gap-4 mb-12">
                     {years.map((year) => (
                         <button
                             key={year}
                             onClick={() => setSelectedYear(year)}
-                            className={`px-4 py-2 rounded ${
+                            className={`px-4 py-2 rounded-full border transition 
+                                ${
                                 selectedYear === year
-                                    ? 'bg-blue-600 text-white'
-                                    : 'bg-gray-200 text-gray-700'
+                                    ? 'bg-gray-700 text-white border-gray-700'
+                                    : 'bg-gray-800 text-gray-300 border-gray-600 hover:bg-gray-700'
                             }`}
                         >
                             {year}
@@ -46,73 +75,10 @@ export default function Team() {
                     ))}
                 </div>
 
-                {currentYearData.Presidencia && (
-                    <section className="mb-12">
-                        <h2 className="text-2xl font-bold text-center mb-8">Presidência</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {currentYearData.Presidencia.map((member, index) => (
-                                <MemberCard
-                                    key={index}
-                                    name={member.name}
-                                    role={member.role}
-                                    social={member.social}
-                                    img={member.img}
-                                />
-                            ))}
-                        </div>
-                    </section>
-                )}
-
-                {currentYearData.DepartamentoInformatica && (
-                    <section className="mb-12">
-                        <h2 className="text-2xl font-bold text-center mb-8">Departamento de Informática</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {currentYearData.DepartamentoInformatica.map((member, index) => (
-                                <MemberCard
-                                    key={index}
-                                    name={member.name}
-                                    role={member.role}
-                                    social={member.social}
-                                    img={member.img}
-                                />
-                            ))}
-                        </div>
-                    </section>
-                )}
-
-                {currentYearData.DepartamentoGestao && (
-                    <section className="mb-12">
-                        <h2 className="text-2xl font-bold text-center mb-8">Departamento de Gestão</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {currentYearData.DepartamentoGestao.map((member, index) => (
-                                <MemberCard
-                                    key={index}
-                                    name={member.name}
-                                    role={member.role}
-                                    social={member.social}
-                                    img={member.img}
-                                />
-                            ))}
-                        </div>
-                    </section>
-                )}
-
-                {currentYearData.DepartamentoMarketing && (
-                    <section className="mb-12">
-                        <h2 className="text-2xl font-bold text-center mb-8">Departamento de Marketing</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {currentYearData.DepartamentoMarketing.map((member, index) => (
-                                <MemberCard
-                                    key={index}
-                                    name={member.name}
-                                    role={member.role}
-                                    social={member.social}
-                                    img={member.img}
-                                />
-                            ))}
-                        </div>
-                    </section>
-                )}
+                {renderSection("Presidência", currentYearData.Presidencia)}
+                {renderSection("Departamento de Informática", currentYearData.DepartamentoInformatica)}
+                {renderSection("Departamento de Gestão", currentYearData.DepartamentoGestao)}
+                {renderSection("Departamento de Marketing", currentYearData.DepartamentoMarketing)}
             </div>
         </div>
     );
