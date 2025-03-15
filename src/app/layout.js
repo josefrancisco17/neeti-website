@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
     <head>
-      <link rel="icon" href="/img/logo-branco.png" />
+      <link rel="icon" href="/img/logo-branco.webp" />
     </head>
       <body>
         <Header />
