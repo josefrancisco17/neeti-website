@@ -80,8 +80,7 @@
           "img": "/img/profile/JoaoFonseca.webp",
           "social": {
             "linkedin": "https://www.linkedin.com/in/joaofonseca04",
-            "github": "https://github.com/Fonsecaaa",
-            "mail": "joao.fonseca@gmail.com"
+            "github": "https://github.com/Fonsecaaa"
           }
         },
         {
@@ -97,13 +96,6 @@
           "name": "Gonçalo Maia",
           "role": "Vogal",
           "img": "/img/profile/GoncaloMaia.webp",
-          "social": {
-          }
-        },
-        {
-          "name": "Marta Manuel",
-          "role": "Vogal",
-          "img": "/img/profile/MartaManuel.webp",
           "social": {
           }
         }
